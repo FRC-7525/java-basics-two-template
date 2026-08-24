@@ -42,13 +42,13 @@ class ConverterTest {
 
     @Test
     void testAddList() {
-        assertEquals(5, converter.addList(Arrays.asList( 2, 3 )));
-        assertEquals(0, converter.addList(Arrays.asList( 0, 0 )));
-        assertEquals(0, converter.addList(Arrays.asList( -1, 1 )));
-        assertEquals(0, converter.addList(Arrays.asList( 1, -1 )));
-        assertEquals(15, converter.addList(Arrays.asList( 1, 2, 3, 4, 5 )));
+        assertEquals(5, converter.addList(Arrays.asList(2, 3)));
+        assertEquals(0, converter.addList(Arrays.asList(0, 0)));
+        assertEquals(0, converter.addList(Arrays.asList(-1, 1)));
+        assertEquals(0, converter.addList(Arrays.asList(1, -1)));
+        assertEquals(15, converter.addList(Arrays.asList(1, 2, 3, 4, 5)));
         assertEquals(0, converter.addList(Arrays.asList()));
-        assertEquals(-5, converter.addList(Arrays.asList( -2, -3 )));
+        assertEquals(-5, converter.addList(Arrays.asList(-2, -3)));
     }
 
     @Test
@@ -104,23 +104,23 @@ class ConverterTest {
 
     @Test
     void testAddListWhile() {
-        assertEquals(5, converter.addListWhile(Arrays.asList( 2, 3 )));
-        assertEquals(0, converter.addListWhile(Arrays.asList( 0, 0 )));
-        assertEquals(0, converter.addListWhile(Arrays.asList( -1, 1 )));
-        assertEquals(0, converter.addListWhile(Arrays.asList( 1, -1 )));
-        assertEquals(15, converter.addListWhile(Arrays.asList( 1, 2, 3, 4, 5 )));
+        assertEquals(5, converter.addListWhile(Arrays.asList(2, 3)));
+        assertEquals(0, converter.addListWhile(Arrays.asList(0, 0)));
+        assertEquals(0, converter.addListWhile(Arrays.asList(-1, 1)));
+        assertEquals(0, converter.addListWhile(Arrays.asList(1, -1)));
+        assertEquals(15, converter.addListWhile(Arrays.asList(1, 2, 3, 4, 5)));
         assertEquals(0, converter.addListWhile(Arrays.asList()));
-        assertEquals(-5, converter.addListWhile(Arrays.asList( -2, -3 )));
+        assertEquals(-5, converter.addListWhile(Arrays.asList(-2, -3)));
     }
 
     @Test
     void testAddPositiveList() {
-        assertEquals(5, converter.addPositiveList(Arrays.asList( 2, 3 )));
-        assertEquals(0, converter.addPositiveList(Arrays.asList( 0, 0 )));
-        assertEquals(1, converter.addPositiveList(Arrays.asList( -1, 1 )));
-        assertEquals(1, converter.addPositiveList(Arrays.asList( 1, -1 )));
-        assertEquals(15, converter.addPositiveList(Arrays.asList( 1, 2, 3, 4, 5 )));
+        assertEquals(5, converter.addPositiveList(Arrays.asList(2, 3)));
+        assertEquals(0, converter.addPositiveList(Arrays.asList(0, 0)));
+        assertEquals(1, converter.addPositiveList(Arrays.asList(-1, 1)));
+        assertEquals(1, converter.addPositiveList(Arrays.asList(1, -1)));
+        assertEquals(15, converter.addPositiveList(Arrays.asList(1, 2, 3, 4, 5)));
         assertEquals(0, converter.addPositiveList(Arrays.asList()));
-        assertEquals(0, converter.addPositiveList(Arrays.asList( -2, -3 )));
+        assertEquals(0, converter.addPositiveList(Arrays.asList(-2, -3)));
     }
 }
